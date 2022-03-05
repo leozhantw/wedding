@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leo and Phoebe's Wedding</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
+    </noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap"/>
+    </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header></header>
+    <div class="page-content">
+      <div class="div">
+        <div class="ww-home-page" id="home">
+          <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
+            <div class="container ww-announcement-container">
+              <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Leo and Phoebe</p>
+              <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">12<sup>th</sup> January, 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="ww-nav-bar sticky-top bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a href="#"><svg class="heart" viewBox="0 0 32 29.6"><path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+        </svg></a>
+              <h1 class="h2"><a class="pl-4 navbar-brand" href="#">Wonderful Wedding</a></h1>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#planners">Planners</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="ww-section bg-light" id="gallery">
+          <div class="ww-photo-gallery">
+            <div class="container">
+              <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Photo Gallery</h2>
+              <div class="col-md-12 text-center ww-category-filter mb-4">
+                <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="*">
+                  All
+                </a>
+                <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="pre-wedding">
+                  Pre-Wedding
+                </a>
+                <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="pre-wedding-video">
+                  Pre-Wedding Video
+                </a>
+                <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="wedding">
+                  Wedding
+                </a>
+                <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="wedding-video">
+                  Wedding Video
+                </a>
+              </div>
+              <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
+                <div id="wedding" class="grid">
+                  <script src="scripts/images.js"></script>
+                  <script>
+                    images.forEach(function(image) {
+                      document.getElementById('wedding').innerHTML +=
+                        '<div class="grid-item '+ image.group +'">' +
+                          '<a href="' + image.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
+                            '<div style="width: '+image.width+'px; height: '+image.height+'px;">' +
+                              '<img class="img-fluid" src="' + image.name + '" loading="lazy"/>' +
+                            '</div>' +
+                          '</a>' +
+                        '</div>';
+                    });
+                  </script>
+                  <div class="grid-item pre-wedding-video">
+                    <iframe width="336" height="200" src="https://www.youtube.com/embed/OJ6xuZOThTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
+                  <div class="grid-item wedding-video">
+                    <iframe width="336" height="200" src="https://www.youtube.com/embed/Nuxv_yF43eM" title="【BR STUDIO】動態作品 l Leo & Phoebe l 證婚晚宴 l 青青時尚花園會館 l 婚錄Brian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ww-section" id="planners">
+          <div class="container ww-couple-friends">
+            <h2 class="h1 text-center pt-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Planners</h2>
+            <div class="carousel slide" id="ww-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#ww-carouselIndicator" data-slide-to="0"></li>
+                <li data-target="#ww-carouselIndicator" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card d-block mb-3"><img class="card-img-top" src="images/planners/dodo.jpg" alt="新秘"/>
+                        <div class="card-body text-center">
+                          <div class="h5 text-center">Miss DoDo</div>
+                          <p class="mb-0 text-muted">新秘</p>
+                          <p class="text-muted">Wedding Planner</p>
+                          <div class="ww-social-links">
+                            <a class="btn btn-link" href="https://www.facebook.com/Luluh.studio" target="_blank">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-link" href="https://www.instagram.com/missdodo_makeup_studio/" target="_blank">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card d-block mb-3"><img class="card-img-top" src="images/planners/damao.jpg" alt="婚攝"/>
+                        <div class="card-body text-center">
+                          <div class="h5">Damao</div>
+                          <p class="mb-0 text-muted">婚攝</p>
+                          <p class="text-muted">Wedding Planner</p>
+                          <div class="ww-social-links">
+                            <a class="btn btn-link" href="https://www.facebook.com/damaohung" target="_blank">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-link" href="https://www.instagram.com/damaohung/" target="_blank">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card d-block mb-3"><img class="card-img-top" src="images/planners/BR.jpg" alt="婚錄"/>
+                        <div class="card-body text-center">
+                          <div class="h5 text-center">BRian</div>
+                          <p class="mb-0 text-muted">婚錄</p>
+                          <p class="text-muted">Wedding Planner</p>
+                          <div class="ww-social-links">
+                            <a class="btn btn-link" href="https://www.facebook.com/%E5%A9%9A%E9%8C%84Brian-BR-Studio%E5%9C%98%E9%9A%8A-103797095116339" target="_blank">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-link" href="https://www.instagram.com/brstudiotw/" target="_blank">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card d-block mb-3"><img class="card-img-top" src="images/planners/hiphoto.jpg" alt="婚攝"/>
+                        <div class="card-body text-center">
+                          <div class="h5">小賀</div>
+                          <p class="mb-0 text-muted">婚攝</p>
+                          <p class="text-muted">Pre Wedding Planner</p>
+                          <div class="ww-social-links">
+                            <a class="btn btn-link" href="https://www.facebook.com/HiPhotograher/" target="_blank">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-link" href="https://www.instagram.com/hiphoto1985/" target="_blank">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card d-block mb-3"><img class="card-img-top" src="images/planners/linlin.jpg" alt="新秘"/>
+                        <div class="card-body text-center">
+                          <div class="h5 text-center">琳琳</div>
+                          <p class="mb-0 text-muted">新秘</p>
+                          <p class="text-muted">Pre Wedding Planner</p>
+                          <div class="ww-social-links">
+                            <a class="btn btn-link" href="https://www.facebook.com/10panmakeupstudio/" target="_blank">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-link" href="https://www.instagram.com/lynn_makeup_artist/" target="_blank">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ww-section ww-footer-detail text-white">
+          <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="col text-center">
+              <h1 class="h1 ww-title pb-3">Thank You</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ww-footer bg-light">
+      <div class="container text-center py-4">
+        <p class="my-0">Wedding in
+          <a class="credit" href="https://77-67.com/taipeichinchin/" target="_blank">青青食尚花園會館</a>
+        </p>
+        <p class="mb-0">&copy; Design -
+          <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a>
+        </p>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  </body>
+</html>
