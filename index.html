@@ -92,7 +92,7 @@
                         '<div class="grid-item '+ image.group +'">' +
                           '<a href="' + image.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
                             '<div style="width: '+image.width+'px; height: '+image.height+'px;">' +
-                              '<img class="img-fluid" src="' + image.name + '" loading="lazy"/>' +
+                              '<img class="img-fluid lazyload" data-src="' + image.name + '"/>' +
                             '</div>' +
                           '</a>' +
                         '</div>';
@@ -240,6 +240,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="./scripts/main.js?ver=1.0.0"></script>
   </body>
 </html>
