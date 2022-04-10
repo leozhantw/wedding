@@ -96,13 +96,18 @@
                             '<img class="img-fluid lazyload" data-src="' + image.name + '" width="' + image.width + '" height="' + image.height + '" />' +
                           '</a>' +
                         '</div>';
+
+                      // insert pre-wedding video end of the latest pre-wedding image
+                      if (image.name === './images/pre-wedding/small/20210423-303.jpg') {
+                        document.getElementById('wedding').innerHTML +=
+                          '<div class="grid-item grid-item--width2 pre-wedding-video">' +
+                            '<iframe width="707" height="415" src="https://www.youtube.com/embed/iWJCmyphZD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+                          '</div>';
+                      }
                     });
                   </script>
-                  <div class="grid-item pre-wedding-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iWJCmyphZD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="grid-item wedding-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nuxv_yF43eM" title="【BR STUDIO】動態作品 l Leo & Phoebe l 證婚晚宴 l 青青時尚花園會館 l 婚錄Brian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="grid-item grid-item--width2 wedding-video">
+                    <iframe width="707" height="415" src="https://www.youtube.com/embed/Nuxv_yF43eM" title="【BR STUDIO】動態作品 l Leo & Phoebe l 證婚晚宴 l 青青時尚花園會館 l 婚錄Brian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
