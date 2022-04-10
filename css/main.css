@@ -263,9 +263,19 @@ body {
   width: 2%;
 }
 
+iframe {
+  max-width: 336px;
+  height: auto;
+  display: block;
+}
+
 /* 2 columns */
 @media (max-width: 992px) {
   .grid-sizer, .grid-item {
     width: 48%;
+  }
+
+  iframe {
+    max-width: 100%;
   }
 }
