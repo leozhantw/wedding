@@ -85,21 +85,21 @@
               </div>
               <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
                 <div id="wedding" class="grid">
+                  <div class="grid-sizer"></div>
+                  <div class="gutter-sizer"></div>
                   <script src="scripts/images.js"></script>
                   <script>
                     images.forEach(function(image) {
                       document.getElementById('wedding').innerHTML +=
                         '<div class="grid-item '+ image.group +'">' +
                           '<a href="' + image.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
-                            '<div style="width: '+image.width+'px; height: '+image.height+'px;">' +
-                              '<img class="img-fluid lazyload" data-src="' + image.name + '"/>' +
-                            '</div>' +
+                            '<img class="img-fluid lazyload" data-src="' + image.name + '" width="' + image.width + '" height="' + image.height + '" />' +
                           '</a>' +
                         '</div>';
                     });
                   </script>
                   <div class="grid-item pre-wedding-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iWJCmyphZD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
+                    <iframe width="336" height="200" src="https://www.youtube.com/embed/iWJCmyphZD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  </div>
                   <div class="grid-item wedding-video">
                     <iframe width="336" height="200" src="https://www.youtube.com/embed/Nuxv_yF43eM" title="【BR STUDIO】動態作品 l Leo & Phoebe l 證婚晚宴 l 青青時尚花園會館 l 婚錄Brian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
@@ -240,6 +240,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="./scripts/main.js?ver=1.0.0"></script>
   </body>

@@ -3,16 +3,19 @@ let $grid;
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 $(document).ready(function() {
-  lazyload();
-
-  $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    masonry: {
+  $grid = $('.grid');
+  $grid.imagesLoaded(function(){
+    $grid.isotope({
       itemSelector: '.grid-item',
-      columnWidth: 356,
-      gutter: 0,
-      horizontalOrder: true
-    }
+      masonry: {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer',
+        percentPosition: true
+      }
+    });
+
+    lazyload();
   });
 
   AOS.init({
