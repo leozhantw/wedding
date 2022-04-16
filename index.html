@@ -93,18 +93,20 @@
                       let html;
                       switch (item.type) {
                         case 'image':
-                          html =
-                            '<div class="grid-item '+ item.group +'">' +
-                              '<a href="' + item.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
-                                '<img class="img-fluid lazyload" data-src="' + item.name + '" width="' + item.width + '" height="' + item.height + '" />' +
-                              '</a>' +
-                            '</div>';
+                          html = `
+                            <div class="grid-item ${ item.group }">
+                              <a href="${ item.name.replace('small', 'large') }" data-toggle="lightbox" data-gallery="ww-gallery">
+                                <img class="img-fluid lazyload" data-src="${ item.name }" width="${ item.width }" height="${ item.height }" />
+                              </a>
+                            </div>
+                          `;
                           break;
                         case 'video':
-                          html =
-                            '<div class="grid-item grid-item--width2 ' + item.group + '">' +
-                              '<iframe width="' + item.width + '" height="' + item.height + '" src="' + item.url + '" title="' + item.name + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
-                            '</div>';
+                          html = `
+                            <div class="grid-item grid-item--width2 ${ item.group }">
+                              <iframe width="${ item.width }" height="${ item.height }" src="${ item.url }" title="${ item.name }" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          `;
                           break;
                       }
                       document.getElementById('wedding').innerHTML += html;
