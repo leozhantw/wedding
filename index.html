@@ -87,28 +87,29 @@
                 <div id="wedding" class="grid">
                   <div class="grid-sizer"></div>
                   <div class="gutter-sizer"></div>
-                  <script src="scripts/images.js"></script>
+                  <script src="scripts/items.js"></script>
                   <script>
-                    images.forEach(function(image) {
-                      document.getElementById('wedding').innerHTML +=
-                        '<div class="grid-item '+ image.group +'">' +
-                          '<a href="' + image.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
-                            '<img class="img-fluid lazyload" data-src="' + image.name + '" width="' + image.width + '" height="' + image.height + '" />' +
-                          '</a>' +
-                        '</div>';
-
-                      // insert pre-wedding video end of the latest pre-wedding image
-                      if (image.name === './images/pre-wedding/small/20210423-303.jpg') {
-                        document.getElementById('wedding').innerHTML +=
-                          '<div class="grid-item grid-item--width2 pre-wedding-video">' +
-                            '<iframe width="707" height="415" src="https://www.youtube.com/embed/iWJCmyphZD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
-                          '</div>';
+                    items.forEach(function(item) {
+                      let html;
+                      switch (item.type) {
+                        case 'image':
+                          html =
+                            '<div class="grid-item '+ item.group +'">' +
+                              '<a href="' + item.name.replace('small', 'large') + '" data-toggle="lightbox" data-gallery="ww-gallery">' +
+                                '<img class="img-fluid lazyload" data-src="' + item.name + '" width="' + item.width + '" height="' + item.height + '" />' +
+                              '</a>' +
+                            '</div>';
+                          break;
+                        case 'video':
+                          html =
+                            '<div class="grid-item grid-item--width2 ' + item.group + '">' +
+                              '<iframe width="' + item.width + '" height="' + item.height + '" src="' + item.url + '" title="' + item.name + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+                            '</div>';
+                          break;
                       }
+                      document.getElementById('wedding').innerHTML += html;
                     });
                   </script>
-                  <div class="grid-item grid-item--width2 wedding-video">
-                    <iframe width="707" height="415" src="https://www.youtube.com/embed/Nuxv_yF43eM" title="【BR STUDIO】動態作品 l Leo & Phoebe l 證婚晚宴 l 青青時尚花園會館 l 婚錄Brian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
                 </div>
               </div>
             </div>
