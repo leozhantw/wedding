@@ -16,12 +16,12 @@ $(document).ready(function() {
     });
 
     lazyload();
-  });
 
-  AOS.init({
-    // uncomment below for on-scroll animations to played only once
-    // once: true
-  }); // initialize animate on scroll library
+    AOS.init({
+      // uncomment below for on-scroll animations to played only once
+      // once: true
+    }); // initialize animate on scroll library
+  });
 });
 
 // Smooth scroll for links with hashes
