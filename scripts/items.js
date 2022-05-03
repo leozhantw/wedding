@@ -154,7 +154,7 @@ const items = [
     "group": "pre-wedding"
   },
   {
-    "name": "./images/pre-wedding/small/20210423-202.jpg",
+    "name": "./images/pre-wedding/small/20210423-201.jpg",
     "type": "image",
     "width": 336,
     "height": 224,
