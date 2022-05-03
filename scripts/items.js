@@ -442,20 +442,6 @@ const items = [
     "group": "wedding"
   },
   {
-    "name": "./images/wedding/small/20220319-31.jpg",
-    "type": "image",
-    "width": 336,
-    "height": 504,
-    "group": "wedding"
-  },
-  {
-    "name": "./images/wedding/small/20220319-32.jpg",
-    "type": "image",
-    "width": 336,
-    "height": 224,
-    "group": "wedding"
-  },
-  {
     "name": "./images/wedding/small/20220319-33.jpg",
     "type": "image",
     "width": 336,
